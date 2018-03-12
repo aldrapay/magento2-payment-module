@@ -1,0 +1,43 @@
+{
+  "name": "aldrapay/magento2-payment-module",
+  "description": "Aldrapay Magento 2 payment module",
+  "type": "magento2-module",
+  "version": "1.0.1",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+      {
+          "name": "Aldrapay",
+          "email": "techsupport@aldrapay.com",
+          "homepage": "https://www.aldrapay.com"
+      }
+  ],
+  "keywords": [
+      "Aldrapay",
+      "magento2_module",
+      "magento2_payment_module",
+      "payment_gateway",
+      "magento2_payment_gateway",
+      "payment_processing",
+      "magento2_payment_processing",
+      "e-commerce",
+      "visa",
+      "mastercard"
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/module-sales": "*",
+    "magento/module-quote": "*",
+    "magento/module-checkout": "*",
+    "magento/module-payment": "*",
+    "aldrapay/aldrapay-api-php": "*"
+  },
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Aldrapay\\Aldrapay\\": ""
+    }
+  }
+}
